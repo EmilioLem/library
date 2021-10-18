@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema bibliotecario</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- Pendientes:
+  - URL del video explicativo * 2
+  - 
+  -->
+</head>
+<body>
+  <h1>Sistema bibliotecario 2.0</h1>
+  <a id="qr-exp" href="https://www.youtube.com/watch?v=43TmnIaL3n4&t=3s" target="_blank">
+    <img src="http://api.qrserver.com/v1/create-qr-code/?size=100x100&qzone=2&data=videoConExplicaciónDeComoUsarApp" alt="Código qr del video">
+  </a>
+
+  <input id="miEntrada" class="numLibroG" type="text" placeholder="Número largo del libro" onkeypress="work(event)" autofocus>
+ 
+  <div class="displayinfo" id="mainDisplay"></div>
+  <div class="buttons" id="misButtons"></div>
+  <p>   
+    Si está prestado (y alerta si se entrega fuera de tiempo, y pone a la persona en una lista negra), muestra un botón grande para devolver o cancelar.
+    
+    En cualquier caso, muestra los datos del libro en pequeño.
+  </p>
+  
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
